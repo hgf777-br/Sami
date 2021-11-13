@@ -1,0 +1,41 @@
+/* CSS para a página do StartupOne SAMI */
+
+section {
+    padding-top: 150px;
+    color:#444;
+}
+
+footer {
+    color:#bbccff;
+}
+.page-wrapper {
+    margin: 0 auto;
+}
+
+.envio {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.nav-item {
+    font-size: 22px;
+    
+}
+
+.texto-hero {
+    padding-top: 20px;
+}
+
+.botoes_servicos {
+    font-size: large;
+}
+
+.botoes_servicos:hover {
+    background-color: #bbccff;
+}
+
+#nome_empresa {
+    font-size: 28px;
+    font-weight: 600;
+    color:#1100cc;
+}

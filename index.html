@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="trabalho final da startup one da fiap">
+  <meta name="author" content="HGF">
+  <title>SAMI</title>
+
+  <!-- SEO -->
+    <meta name="description" content="Serviço de Auditoria Médica Inteligente">
+    <meta name="keywords" content="saúde, ocupacional, trabalho, exame, processo médico, PCMSO, PGR, PPRA">
+    <meta name="author" content="SAMI">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./bs5/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="./icon/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="./icon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="./icon/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="./icon/manifest.json">
+  <link rel="mask-icon" href="./icon/safari-pinned-tab.svg" color="#ffffff">
+  <link rel="icon" href="./icon/favicon.ico">
+
+  <!-- Custom styles for this template -->
+  <link href="sami.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-md bg-white fixed-top">
+    <div class="container border-right">
+      <a class="navbar-brand" href="#hero" aria-current="page">
+        <img src="./icon/android-chrome-192x192.png" height="100px" alt=""/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SAMI</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#somos">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Nossos Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contatos">Contatos</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button id="btLogin" class="btn btn-outline-success" type="button">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <main class="page-wrapper">
+
+    <section id=hero class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="./img/logo sami.png" class="img-fluid float-end" alt=""/>
+        </div>
+        <div class="col-sm-6 texto-hero">
+          <h2>Serviço de Auditoria</h2>
+          <h2>Médica Inteligente</h2>
+          <h4 class="pt-3">Nossa especialidade é trazer inovação para a saúde ocupacional.</h4>
+          <img src="./img/medicina-do-trabalho-1.jpg" class="img-fluid float-start" alt="" />
+        </div>
+      </div>
+
+    </section>
+
+    <section id="somos" class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="border-right mb-3 pb-2">Quem Somos</h1>
+          <h3 class="mb-3">Serviço de Auditoria Médica Inteligente</h3>
+          <h5>Somos uma startup voltada para o mercado de Saúde Ocupacional. 
+            Temos como objetivo principal trazer tecnologia para a análise dos relatórios médicos gerados 
+            a partir de diversos exames dentro da saúde ocupacional. A Lei Brasileira determina diversos 
+            procedimentos relativos a saúde do trabalhador. Procedimentos estes que visam prevenir e melhorar
+            doenças e amparar juridicamente o trabalhador e a empresa contratante.
+          </h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="border-right mb-3 pb-2">Nossos Serviços</h1>
+          <h3 class="mb-5">Criamos pacotes para melhor atender as demandas do mercado,
+            atingindo desde pequenas empresas até grandes corporações.
+          </h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="list-group list-group-flush">
+                <button type="button" class="list-group-item list-group-item-action my-4 botoes_servicos" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" 
+                data-bs-content="este pacote é comercializado em duas versões, para 1000 ou 2000 análises por mês. Com este pacote você racebe acesso ao nosso portal
+                de cliente, pode subir os seus exames em diversos formatos de arquivo e receber um relatório da aderência do mesmo as normas
+                e demais coisas.">Pacote Básico - pequenas empresas.</button>
+                <button type="button" class="list-group-item list-group-item-action mb-4 botoes_servicos" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" 
+                data-bs-content="este pacote é comercializado em duas versões, para 5000 ou 10000 análises por mês. Este pacote possui todas as funcionalidades do Básico e
+                mais um serviço de armazenamento digital dos exames dos último 5 anos. Você irá receber um acesso a um repositório exclusivo para os seus exames e poderá
+                fazer consultas.">Pacote Intermediário - médias empresas</button>
+                <button type="button" class="list-group-item list-group-item-action mb-4 botoes_servicos" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" 
+                data-bs-content="este pacote é comercializado em duas versões, para 5000 ou 10000 análises por mês. Este pacote possui todas as funcionalidades do Básico e
+                mais um serviço de armazenamento digital dos exames dos último 5 anos. Você irá receber um acesso a um repositório exclusivo para os seus exames e poderá
+                fazer consultas.">Pacote Avançado - grandes empresas</button>
+                <button type="button" class="list-group-item list-group-item-action mb-4 botoes_servicos" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" 
+                data-bs-content="este pacote é comercializado em duas versões, para 5000 ou 10000 análises por mês. Este pacote possui todas as funcionalidades do Básico e
+                mais um serviço de armazenamento digital dos exames dos último 5 anos. Você irá receber um acesso a um repositório exclusivo para os seus exames e poderá
+                fazer consultas.">Pacote Personalizado - do seu jeito!</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="./img/IAxPessoa.png" class="img-fluid float-start" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contatos" class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Contatos</h1>
+          <h3 calss="pt-3">Estamos sempre prontos a atendê-lo!</h3>
+          <h5 class="pt-3 mb-3">Se você procura maior eficiência para a sua empresa venha tomar um café conosco e veja como podemos ajudá-lo! 
+          </h5>
+        </div>
+      </div>
+
+      <div class="row pb-2 pb-md-5">
+        <form class="col-xl-6 col-lg-7 col-md-7 needs-validation mb-5" method="post" action="./enviar_email.php" novalidate>
+          <h5 class="pb-4">Se preferir preencha o formulário abaixo que entraremos em contato.</h5>
+          <div class="input-group mb-3"><em class="ai-user position-absolute top-50 start-0 translate-middle-y ms-3"></em>
+            <input class="form-control rounded" type="text" name="nome" placeholder="Nome" required>
+          </div>
+          <div class="input-group mb-3"><em class="ai-mail position-absolute top-50 start-0 translate-middle-y ms-3"></em>
+            <input class="form-control rounded" type="email" name="email" placeholder="Email" required>
+          </div>
+            <div class="input-group mb-3"><em class="ai-phone position-absolute top-50 start-0 translate-middle-y ms-3"></em>
+            <input class="form-control rounded" type="tel" name="telefone" pattern="[0-9\s]{10,}" placeholder="Telefone" required>
+          </div>
+          <div class="mb-3 pb-1">
+            <textarea class="form-control" rows="6" name="descricao" placeholder="Nos conte um pouco da sua empresa" required></textarea>
+          </div>
+          <div class="row pt-2">
+            <div class="col-lg-6 col-md-8">
+              <button class="btn btn-primary btn-block" name="BTEnvia" id="BTEnvia" type="submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+        <div class="col-xl-3 col-lg-4 offset-xl-3 offset-lg-1 col-md-5 mb-5">
+          <h2 class="pb-2">Contatos</h2>
+          <ul class="list-unstyled fs-sm mb-4 pb-2">
+            <li><a class="nav-link-style" href="mailto:atendimento@sami.com.br">atendimento@sami.com.br</a></li>
+            <li><a class="nav-link-style" href="tel:+551140041100">+55 11 4004 1100</a></li>
+            <li><span class="nav-link-style">Rua Paraiso 123</span></li>
+            <li><span class="nav-link-style">Vila Maria</span></li>
+            <li><span class="nav-link-style">São Paulo • SP</span></li>
+            <li><span class="nav-link-style">05002-000</span></li>
+            <li class="mt-3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.875028290567!2d-46.64427124931936!3d-23.57293146782977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59977420415b%3A0x79efa48cd1ee4b2e!2sR.%20do%20Para%C3%ADso%2C%20123%20-%20Vila%20Maria%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004103-001!5e0!3m2!1spt-BR!2sbr!4v1636819989142!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
+          </ul>
+          <h3 class="h6 pb-2">Siga-nos:</h3><a class="btn-social bs-outline bs-facebook bs-lg me-2 mb-2" href="https://www.facebook.com/inovegraficadigital.sp" target="_blank"><i class="ai-facebook"></i></a><a class="btn-social bs-outline bs-instagram bs-lg me-2 mb-2" href="https://www.instagram.com/inove_grafica_digital/" target="_blank"><i class="ai-instagram"></i></a><a class="btn-social bs-outline bs-linkedin bs-lg me-2 mb-2" href="https://www.linkedin.com/company/inove-grafica-digital" target="_blank"><i class="ai-linkedin"></i></a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer-->
+    <footer class="footer pt-1 pt-md-4 mt-3">   
+      <div class="bg-secondary pt-3 pb-3">
+        <div class="container d-md-flex justify-content-between align-items-center text-center">
+          <ul class="list-inline fs-sm mb-3 order-md-2">
+            <li class="list-inline-item my-1">Suporte</li>
+            <li class="list-inline-item my-1">Contatos</li>
+            <li class="list-inline-item my-1">Termos &amp; Condições</li>
+          </ul>
+          <p class="fs-sm mb-3 order-md-1"><span class="">© todos direitos reservados. produzido por SAMI</span></p>
+        </div>
+      </div>
+    </footer>
+
+  <!-- js libraries e scripts-->    
+
+  <script src="./bs5/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script>
+    document.getElementById("btLogin").addEventListener("click", function(){ document.location.href = "./envio.html"; });  
+    
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>  
+
+      
+</body>
+
+</html>

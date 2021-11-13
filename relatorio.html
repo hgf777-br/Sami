@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="trabalho final da startup one da fiap">
+  <meta name="author" content="HGF">
+  <title>SAMI</title>
+
+  <!-- SEO -->
+    <meta name="description" content="Sistema de Análises Médicas Inteligente">
+    <meta name="keywords" content="saúde, ocupacional, trabalho, exame, processo médico, PCMSO, PGR, PPRA">
+    <meta name="author" content="SAMI">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./bs5/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="./icon/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="./icon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="./icon/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="./icon/manifest.json">
+  <link rel="mask-icon" href="./icon/safari-pinned-tab.svg" color="#ffffff">
+  <link rel="icon" href="./icon/favicon.ico">
+
+  <!-- Custom styles for this template -->
+  <link href="sami.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-md bg-white fixed-top">
+    <div class="container border-bottom">
+      <a class="navbar-brand" href="#hero" aria-current="page">
+        <img src="./icon/android-chrome-192x192.png" height="100px" alt="" class="d-inline-block"/>
+        <span id="nome_empresa">Rhmed</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SAMI</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="./envio.html">Envio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="./cadastro.html">Cadastro</a>
+            </li>
+            <li class="nav-item texto-menu">
+              <a class="nav-link texto-menu active" href="#">Relatório</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button id="btLogoff" class="btn btn-outline-danger" type="button">Logoff</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <main class="page-wrapper">
+
+    <section class="container envio">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="./img/logo sami.png" class="img-fluid float-end" alt=""/>
+        </div>
+        <div class="col-sm-8 texto-hero">
+          <h4>Escolha a qual cliente pertence os arquivos</h4>
+            <div class="input-group mt-3">
+              <label class="input-group-text" for="inputEmpresa">Empresa</label>
+              <select class="form-select" id="inputEmpresa">
+                <option value="0" selected>Mercedes</option>
+                <option value="1">Coca Cola</option>
+                <option value="2">Pepsi</option>
+                <option value="3">Meta</option>
+              </select>
+            </div>
+          <h4 class="mt-5">Escolha o tipo de relatório</h4>
+            <div class="mt-3">
+              <input type="radio" class="btn-check" name="tipo_relatorio" id="por_nome" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="por_nome">por nome</label>
+              <input type="radio" class="btn-check" name="tipo_relatorio" id="por_exame" autocomplete="off">
+              <label class="btn btn-outline-primary" for="por_exame">por exame</label>
+              <input type="radio" class="btn-check" name="tipo_relatorio" id="por_data" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="por_data">por data</label>
+              <input type="radio" class="btn-check" name="tipo_relatorio" id="por_medico" autocomplete="off">
+              <label class="btn btn-outline-primary" for="por_medico">por médico</label>
+            </div>
+          <h4 class="mt-5">Escolha o período para o relatório</h4>
+            <div class="input-group mt-3">
+              <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">  <input class="span2" size="16" type="text" value="12-02-2012">  <span class="add-on"><i class="icon-th"></i></span></div>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer-->
+    <footer class="footer pt-1 pt-md-4 mt-3">   
+      <div class="bg-secondary pt-3 pb-3">
+        <div class="container d-md-flex justify-content-between align-items-center text-center">
+          <ul class="list-inline fs-sm mb-1 order-md-2">
+            <li class="list-inline-item my-1">Suporte</li>
+            <li class="list-inline-item my-1">Contatos</li>
+            <li class="list-inline-item my-1">Termos &amp; Condições</li>
+          </ul>
+          <p class="fs-sm mb-3 order-md-1"><span class="">© todos direitos reservados. produzido por SAMI</span></p>
+        </div>
+      </div>
+    </footer>
+
+  <!-- js libraries e scripts-->    
+
+  <script src="./bs5/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script>
+    document.getElementById("btLogoff").addEventListener("click", function(){ document.location.href = "./index.html"; });
+    
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>  
+
+      
+</body>
+
+</html>
