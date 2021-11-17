@@ -25,6 +25,7 @@
   <link rel="icon" href="./icon/favicon.ico">
 
   <!-- Custom styles for this template -->
+  <link href="./css/bootstrap.fd.css" rel="stylesheet">
   <link href="sami.css" rel="stylesheet">
 </head>
 
@@ -46,13 +47,16 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link texto-menu active" href="#">Envio</a>
+              <a class="nav-link texto-menu active" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Envio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="./cadastro.html">Cadastro</a>
+              <a class="nav-link texto-menu" href="./pesquisa.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Pesquisa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="./cadastro.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de clientes">Cadastro</a>
             </li>
             <li class="nav-item texto-menu">
-              <a class="nav-link texto-menu" href="./relatorio.html">Relatório</a>
+              <a class="nav-link texto-menu" href="./relatorio.html " data-bs-toggle="tooltip" data-bs-placement="bottom" title="dos exames">Relatório</a>
             </li>
           </ul>
           <div class="d-flex">
@@ -70,7 +74,7 @@
         <div class="col-sm-4">
           <img src="./img/logo sami.png" class="img-fluid float-end" alt=""/>
         </div>
-        <div class="col-sm-8 texto-hero">
+        <div class="col-sm-8 col-md-7 col-lg-6 texto-hero">
           <h4>Escolha a qual cliente pertence os arquivos</h4>
             <div class="input-group mt-3">
               <label class="input-group-text" for="inputEmpresa">Empresa</label>
@@ -82,10 +86,11 @@
               </select>
             </div>
           <h4 class="mt-5">Envie arquivos nos formatos PDF ou Jpeg</h4>
-            <div class="input-group mt-3">
-              <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+          <div id="uploader" class="mb-3"></div>
+            <!--<div class="input-group mt-3">
+              <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" multiple webkitdirectory aria-label="Upload">
               <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">enviar</button>
-            </div>
+            </div>-->
         </div>
       </div>
 
@@ -110,19 +115,39 @@
     </footer>
 
   <!-- js libraries e scripts-->    
-
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/5x5jqpi.min.js"></script>
   <script src="./bs5/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   <script>
-    document.getElementById("btLogoff").addEventListener("click", function(){ document.location.href = "./index.html"; });
+    $("#uploader").initUploader({
+      destination: './uploaderUrl',
+      showDescription: true,
+      sizeLimit: 5,
+    });
+
+
+    $('#btLogoff').on('click', function(){ 
+      document.location.href = "./index.html"; 
+    });
+    
+    $('.navbar-nav li a').on('click', function(){
+      $('#offCanvasBTClose').click();
+    });    
     
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       return new bootstrap.Popover(popoverTriggerEl)
-    })
+    });
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
   </script>  
 
       
 </body>
 
 </html>
+

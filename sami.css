@@ -14,7 +14,7 @@ footer {
 
 .envio {
     margin-top: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .nav-item {
@@ -32,6 +32,10 @@ footer {
 
 .botoes_servicos:hover {
     background-color: #bbccff;
+}
+
+.popover-body {
+    font-size: large;
 }
 
 #nome_empresa {
