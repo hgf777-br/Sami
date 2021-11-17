@@ -46,10 +46,10 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link texto-menu active" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Envio</a>
+              <a class="nav-link texto-menu active" href="./envio.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Envio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="./pesquisa.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Pesquisa</a>
+              <a class="nav-link texto-menu" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Pesquisa</a>
             </li>
             <li class="nav-item">
               <a class="nav-link texto-menu" href="./cadastro.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de clientes">Cadastro</a>
@@ -68,12 +68,9 @@
   
   <main class="page-wrapper">
 
-    <section class="container envio">
+    <section class="container">
       <div class="row">
-        <div class="col-sm-4">
-          <img src="./img/logo sami.png" class="img-fluid float-end" alt=""/>
-        </div>
-        <div class="col-sm-8 col-md-7 col-lg-6 texto-hero">
+        <div class="col">
           <h4>Escolha a qual cliente pertence os arquivos</h4>
             <div class="input-group mt-3">
               <label class="input-group-text" for="inputEmpresa">Empresa</label>
@@ -84,12 +81,39 @@
                 <option value="3">Meta</option>
               </select>
             </div>
-          <h4 class="mt-5">Envie arquivos nos formatos PDF ou Jpeg</h4>
-          <div id="uploader" class="mb-3"></div>
-            <!--<div class="input-group mt-3">
-              <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" multiple webkitdirectory aria-label="Upload">
-              <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">enviar</button>
-            </div>-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table table-striped" aria-label="Tabela de Exames">
+            <thead>
+              <tr>
+                <th scope="col">Empresa</th>
+                <th scope="col">Número Exame</th>
+                <th scope="col">Funcionário</th>
+                <th scope="col">Data Exame</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Mercedes</th>
+                <td>1034</td>
+                <td>João Carlos Macedo</td>
+                <td>10/04/2021</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
