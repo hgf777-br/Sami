@@ -29,6 +29,32 @@
 </head>
 
 <body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="resposta" tabindex="-1" aria-labelledby="Resposta" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="usuario" class="form-label">usuário</label>
+            <input type="text" class="form-control" id="usuario" value="Henrique" aria-describedby="nome_usuario">
+            <label for="senha" class="form-label">senha</label>
+            <input type="password" class="form-control" id="senha" value="teste123" aria-describedby="senha_usuario">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button id="btLogin" type="button" class="btn btn-success">Entrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Nav Menu-->
   <nav class="navbar navbar-light navbar-expand-md bg-white fixed-top">
     <div class="container border-bottom">
       <a class="navbar-brand" href="#hero" aria-current="page">
@@ -46,10 +72,10 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link texto-menu active" href="./envio.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Envio</a>
+              <a class="nav-link texto-menu" href="./envio.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Envio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-menu" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Pesquisa</a>
+              <a class="nav-link texto-menu active" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de exames">Pesquisa</a>
             </li>
             <li class="nav-item">
               <a class="nav-link texto-menu" href="./cadastro.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="de clientes">Cadastro</a>
@@ -71,16 +97,7 @@
     <section class="container">
       <div class="row">
         <div class="col">
-          <h4>Escolha a qual cliente pertence os arquivos</h4>
-            <div class="input-group mt-3">
-              <label class="input-group-text" for="inputEmpresa">Empresa</label>
-              <select class="form-select" id="inputEmpresa">
-                <option value="0" selected>Mercedes</option>
-                <option value="1">Coca Cola</option>
-                <option value="2">Tesla</option>
-                <option value="3">Meta</option>
-              </select>
-            </div>
+          
         </div>
       </div>
       <div class="row">
@@ -143,12 +160,6 @@
   <script src="./bs5/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   <script>
-    $("#uploader").initUploader({
-      destination: './upload.php',
-      showDescription: true,
-      sizeLimit: 5,
-    });
-
 
     $('#btLogoff').on('click', function(){ 
       document.location.href = "./index.html"; 
